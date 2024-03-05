@@ -5,6 +5,18 @@
       "enabled": false
     },
     "enableRenovate": true,
-    "extends": ["config:recommended"]
+    "extends": ["config:recommended"],
+    "packageRules": [ 
+      {
+        "groupName": "maven-plugins",
+        "matchPackagePatterns": [ "^org.apache.maven.plugins:" ]
+      },
+      {
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchCurrentVersion": "!/^0/",
+        "automerge": true,
+        "automergeType": "branch"
+      }
+    ]
   }  
 }
