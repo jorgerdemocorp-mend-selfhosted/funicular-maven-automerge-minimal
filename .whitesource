@@ -4,7 +4,7 @@
     "workflowRules": {
       "enabled": false
     },
-    "enableRenovate": true,
+    "enableRenovate": false,
     "extends": ["config:recommended"],
     "packageRules": [ 
       {
